@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: black;
+}
+.card {
+  width: 350px;
+  padding: 2%;
+  height: 400px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card img {
+  width: 35%;
+  border-radius: 200px;
+  margin-top: 20px;
+}
+.card h1 {
+  color: white;
+  margin: 15px 0px;
+  letter-spacing: 2px;
+}
+.card p{
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.card button{
+    padding: 10px 10px;
+    background: none;
+    color: white;
+    border:2px solid white;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.5s;
+    transition-property: background,color;
+}
+.card button:hover{
+    background: white;
+    color: black;
+}
+.ball1{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    background-color: #e23e57;
+    box-shadow: 0 0 50px #e23e57;  
+    position: absolute;
+    left: 25%;
+    animation: moving1 6s linear 0s infinite alternate;
+}
+@keyframes moving1 {
+     0%{
+        transform: translateX(0);
+     }
+     100%{
+        transform: translateX(40px);
+     }
+}
+
+.ball2{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: #7b77ff;
+    box-shadow: 0 0 50px #7b77ff;  
+    position: absolute;
+    left: 62%;
+    top: 62%;
+    animation: moving2 6s linear infinite alternate;
+}
+@keyframes moving2 {
+     0%{
+        transform: translate(0px);
+     }
+     100%{
+        transform: translate(-35px);
+     }
+}
+
+/* modal section  */
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgb(22, 20, 20);
+    opacity: .8;
+    color: white;
+    transform: scale(0);
+    
+}
+.container .box{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20%;
+    border: 2px solid silver;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: .5s;
+}
+.container .box .top{
+    justify-content: space-between;
+    width:100%;
+    display: flex;
+}
+.container .box .top .fa-close{
+    margin-right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.container .box hr{
+    width: 90%;
+    margin: 0 auto;
+}
+.container .box h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.container .box p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.container .box .options{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.container .box .options a i{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 500px;
+}
+.container .box .options .fa-facebook{
+    border: 2px solid blue;
+    color: blue;
+} 
+.container .box .options .fa-twitter{
+    color: skyblue;
+    border: 2px solid skyblue;
+} 
+.container .box .options .fa-instagram{
+    color: red;
+    border: 2px solid red;
+}
+.container .box .options .fa-whatsapp{
+    color: green;
+    border: 2px solid green;
+}
+.container .box .options .fa-github{
+    color: purple;
+    border: 2px solid purple;
+}
+

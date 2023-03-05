@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- wrapper start -->
+   <div class="wrapper">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="card">
+            <img src="images/myImage.jpg" alt="">
+            <h1>Pranav Thakur</h1>
+            <p>Front End Developer</p>
+            <div class="buttons">
+                <button id="share-btn"><i class="fa fa-share"></i> Share my Profile</button>
+                <button>Follow Me</button>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="container" id="modal-container">
+            <div class="box" id="modal-box">
+                <div class="top">
+                    <h1>Share my Profile</h1>
+                    <i class="fa fa-close" id="closeBtn"></i>
+                </div>
+                <hr>
+                <p>Share this via</p>
+                <div class="options">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-instagram"></i></a>
+                   <a href="#"><i class="fa fa-whatsapp"></i></a>
+                   <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+</body>
+</html>
